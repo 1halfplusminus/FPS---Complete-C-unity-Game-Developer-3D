@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 734fbfb568154d32a89d792102f0c779, type: 3}
+  m_Name: Ammo Slot
+  m_EditorClassIdentifier: 
+  FullQualifiedName: AmmoSlot, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  Namespace: 
+  BaseType: AmmoSlot
+  GenerationOptions: 4194303
+  Scripts:
+  - {fileID: 11500000, guid: f8e6c23ee13157545a3fa3cf6edc7054, type: 3}
+  - {fileID: 11500000, guid: 2ea2ae560d858ac48ba5fe09ca6c91fc, type: 3}
+  - {fileID: 11500000, guid: b9770aeb6fa165847b4a85722dc17052, type: 3}
+  - {fileID: 11500000, guid: 5620c446c4c2a37499c3b5e74187f457, type: 3}
+  - {fileID: 11500000, guid: 1ddae3318869fca4296bc5ebd1e73ccc, type: 3}
+  - {fileID: 11500000, guid: 3bb93fc951ddcfc48bf7b69381f2e91d, type: 3}
+  - {fileID: 11500000, guid: b42f9c2e3e7f9264f8e75ea54130dd2a, type: 3}
+  - {fileID: 11500000, guid: 2cc8a5dba595eea459ff15ceaf1b9d91, type: 3}
+  - {fileID: 11500000, guid: 28059ce1e8558ec4dbb104035613d7c1, type: 3}
+  - {fileID: 11500000, guid: 6cb68599e1cb8714cb1c47f1d3336597, type: 3}
+  - {fileID: 11500000, guid: 6a98501e79c6f804d915c3bb522dba60, type: 3}
+  - {fileID: 11500000, guid: c131da5bd71a94c4bb79cb46fa832151, type: 3}
+  - {fileID: 11500000, guid: 4fd1e72d4a834cc4aad59d2135538a9f, type: 3}
+  - {fileID: 11500000, guid: d08fbb99ca2e5424aad40f67cfdb7f69, type: 3}
+  - {fileID: 11500000, guid: aed317788095d664b8ea4b3f0a60c269, type: 3}
+  - {fileID: 11500000, guid: 7c34cec96638bf94c8c53b42321494c4, type: 3}
+  - {fileID: 11500000, guid: 23aff51f7098aa243ae9ca0558dc52e1, type: 3}
+  - {fileID: 11500000, guid: d924a128041a47e4a9f681b8b536d81c, type: 3}
+  - {fileID: 11500000, guid: 421c4114a0939fd4bb58612281738a62, type: 3}
+  - {fileID: 11500000, guid: 40644303ba428824b8e6d455d94a8729, type: 3}
+  - {fileID: 11500000, guid: c61a6adb2388f864e85f10f81161fd22, type: 3}
+  - {fileID: 11500000, guid: 72e3e7726fb7bc343a631ed7a95010fa, type: 3}

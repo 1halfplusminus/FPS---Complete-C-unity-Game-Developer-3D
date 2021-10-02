@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 734fbfb568154d32a89d792102f0c779, type: 3}
+  m_Name: PlayableMono
+  m_EditorClassIdentifier: 
+  FullQualifiedName: PlayableMonoBehaviour, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  Namespace: 
+  BaseType: PlayableMonoBehaviour
+  GenerationOptions: 3088504
+  Scripts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 11500000, guid: 86e37e83cc804e44e81e8e7d0c964286, type: 3}
+  - {fileID: 11500000, guid: 8456864efbc02c440b5c199b523a33c7, type: 3}
+  - {fileID: 11500000, guid: fa037b3163f48cc4093a97d5aacc6b0d, type: 3}
+  - {fileID: 11500000, guid: 8cabd8f34a0b1d54b87991a05f6ff9ce, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 11500000, guid: 532c48887443fd14d9a3181ecf954aff, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 11500000, guid: 31e42ef2517ad2345b267284cad0c5bb, type: 3}
+  - {fileID: 11500000, guid: d6e44182c2b90a84a9e5a25241277556, type: 3}
+  - {fileID: 11500000, guid: 31229b6c99e58ca4fa80b6b5b4adeeb3, type: 3}
+  - {fileID: 11500000, guid: 0ece82bab327b1d44a0127ebff33cf84, type: 3}
+  - {fileID: 0}
+  - {fileID: 11500000, guid: c480457120282e1458ff979180e34627, type: 3}

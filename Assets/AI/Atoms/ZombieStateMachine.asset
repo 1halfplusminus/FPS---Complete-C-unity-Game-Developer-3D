@@ -1,0 +1,182 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a56d454e768904df09296076c1aaea26, type: 3}
+  m_Name: ZombieStateMachine
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _id: 
+  _value: IDLE
+  _changed: {fileID: 11400000, guid: 6fef94bfa86a6e14da52de56cb434a21, type: 2}
+  _changedWithHistory: {fileID: 11400000, guid: 5f0c640d596836245b528fd38cb55d76, type: 2}
+  _triggerChangedOnOnEnable: 0
+  _triggerChangedWithHistoryOnOnEnable: 0
+  _oldValue: IDLE
+  _initialValue: IDLE
+  _preChangeTransformers: []
+  _transitionStarted: {fileID: 0}
+  _completeCurrentTransition: {fileID: 0}
+  _states:
+    _list:
+    - _id:
+        _usage: 1
+        _value: IDLE
+        _constant: {fileID: 11400000, guid: ed0b82442214b95459fbdef5227f4f90, type: 2}
+        _variable: {fileID: 0}
+        _variableInstancer: {fileID: 0}
+      _cooldown:
+        _usage: 0
+        _value: 0
+        _constant: {fileID: 0}
+        _variable: {fileID: 0}
+        _variableInstancer: {fileID: 0}
+      _subMachine: {fileID: 0}
+    - _id:
+        _usage: 1
+        _value: PROVOKED
+        _constant: {fileID: 11400000, guid: 7b875241044e1404b947ac8f0ff79274, type: 2}
+        _variable: {fileID: 0}
+        _variableInstancer: {fileID: 0}
+      _cooldown:
+        _usage: 0
+        _value: 0
+        _constant: {fileID: 0}
+        _variable: {fileID: 0}
+        _variableInstancer: {fileID: 0}
+      _subMachine: {fileID: 0}
+    - _id:
+        _usage: 1
+        _value: PROVOKED
+        _constant: {fileID: 11400000, guid: f59b92bad5dc21949846d1c01bf760a4, type: 2}
+        _variable: {fileID: 0}
+        _variableInstancer: {fileID: 0}
+      _cooldown:
+        _usage: 0
+        _value: 1.2
+        _constant: {fileID: 0}
+        _variable: {fileID: 0}
+        _variableInstancer: {fileID: 0}
+      _subMachine: {fileID: 0}
+    - _id:
+        _usage: 1
+        _value: PROVOKED
+        _constant: {fileID: 11400000, guid: f493e4d418e2aa94a9541d799082ca61, type: 2}
+        _variable: {fileID: 0}
+        _variableInstancer: {fileID: 0}
+      _cooldown:
+        _usage: 0
+        _value: 0
+        _constant: {fileID: 0}
+        _variable: {fileID: 0}
+        _variableInstancer: {fileID: 0}
+      _subMachine: {fileID: 0}
+  _transitions:
+    _list:
+    - _fromState:
+        _usage: 1
+        _value: IDLE
+        _constant: {fileID: 11400000, guid: ed0b82442214b95459fbdef5227f4f90, type: 2}
+        _variable: {fileID: 0}
+        _variableInstancer: {fileID: 0}
+      _toState:
+        _usage: 1
+        _value: PROVOKED
+        _constant: {fileID: 11400000, guid: 7b875241044e1404b947ac8f0ff79274, type: 2}
+        _variable: {fileID: 0}
+        _variableInstancer: {fileID: 0}
+      _command:
+        _usage: 1
+        _value: PROVOKE
+        _constant: {fileID: 11400000, guid: ce09a40d812822047bbe3fa2d34f30a3, type: 2}
+        _variable: {fileID: 0}
+        _variableInstancer: {fileID: 0}
+      _testCondition: {fileID: 0}
+      _raiseEventToCompleteTransition: 0
+    - _fromState:
+        _usage: 1
+        _value: IDLE
+        _constant: {fileID: 11400000, guid: 7b875241044e1404b947ac8f0ff79274, type: 2}
+        _variable: {fileID: 0}
+        _variableInstancer: {fileID: 0}
+      _toState:
+        _usage: 1
+        _value: PROVOKED
+        _constant: {fileID: 11400000, guid: f59b92bad5dc21949846d1c01bf760a4, type: 2}
+        _variable: {fileID: 0}
+        _variableInstancer: {fileID: 0}
+      _command:
+        _usage: 1
+        _value: PROVOKE
+        _constant: {fileID: 11400000, guid: 3e277230ff393444988f6e05138c1db1, type: 2}
+        _variable: {fileID: 0}
+        _variableInstancer: {fileID: 0}
+      _testCondition: {fileID: 0}
+      _raiseEventToCompleteTransition: 0
+    - _fromState:
+        _usage: 1
+        _value: IDLE
+        _constant: {fileID: 11400000, guid: 7b875241044e1404b947ac8f0ff79274, type: 2}
+        _variable: {fileID: 0}
+        _variableInstancer: {fileID: 0}
+      _toState:
+        _usage: 1
+        _value: PROVOKED
+        _constant: {fileID: 11400000, guid: f493e4d418e2aa94a9541d799082ca61, type: 2}
+        _variable: {fileID: 0}
+        _variableInstancer: {fileID: 0}
+      _command:
+        _usage: 1
+        _value: PROVOKE
+        _constant: {fileID: 11400000, guid: 2bb51df4161608a4396a15be5bced68c, type: 2}
+        _variable: {fileID: 0}
+        _variableInstancer: {fileID: 0}
+      _testCondition: {fileID: 0}
+      _raiseEventToCompleteTransition: 0
+    - _fromState:
+        _usage: 1
+        _value: IDLE
+        _constant: {fileID: 11400000, guid: f493e4d418e2aa94a9541d799082ca61, type: 2}
+        _variable: {fileID: 0}
+        _variableInstancer: {fileID: 0}
+      _toState:
+        _usage: 1
+        _value: PROVOKED
+        _constant: {fileID: 11400000, guid: f59b92bad5dc21949846d1c01bf760a4, type: 2}
+        _variable: {fileID: 0}
+        _variableInstancer: {fileID: 0}
+      _command:
+        _usage: 1
+        _value: PROVOKE
+        _constant: {fileID: 11400000, guid: 3e277230ff393444988f6e05138c1db1, type: 2}
+        _variable: {fileID: 0}
+        _variableInstancer: {fileID: 0}
+      _testCondition: {fileID: 0}
+      _raiseEventToCompleteTransition: 0
+    - _fromState:
+        _usage: 1
+        _value: IDLE
+        _constant: {fileID: 11400000, guid: ed0b82442214b95459fbdef5227f4f90, type: 2}
+        _variable: {fileID: 0}
+        _variableInstancer: {fileID: 0}
+      _toState:
+        _usage: 1
+        _value: PROVOKED
+        _constant: {fileID: 11400000, guid: f59b92bad5dc21949846d1c01bf760a4, type: 2}
+        _variable: {fileID: 0}
+        _variableInstancer: {fileID: 0}
+      _command:
+        _usage: 1
+        _value: PROVOKE
+        _constant: {fileID: 11400000, guid: 3e277230ff393444988f6e05138c1db1, type: 2}
+        _variable: {fileID: 0}
+        _variableInstancer: {fileID: 0}
+      _testCondition: {fileID: 0}
+      _raiseEventToCompleteTransition: 0

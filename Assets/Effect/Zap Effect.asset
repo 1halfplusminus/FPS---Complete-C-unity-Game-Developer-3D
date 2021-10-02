@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31440ed610164af448d0659bf1c9ac0e, type: 3}
+  m_Name: Zap Effect
+  m_EditorClassIdentifier: 
+  playable: {fileID: 8114800841986814319, guid: e7d95388d0af16d40847c2a697a7bd99, type: 3}
+  usePivot: {fileID: 11400000, guid: 6ffe416867b3cac49a88ff4503f2c401, type: 2}

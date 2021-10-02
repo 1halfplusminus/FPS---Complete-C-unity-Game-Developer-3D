@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 734fbfb568154d32a89d792102f0c779, type: 3}
+  m_Name: Cinemachine Virtual Camera
+  m_EditorClassIdentifier: 
+  FullQualifiedName: Cinemachine.CinemachineVirtualCamera, Cinemachine, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  Namespace: Cinemachine
+  BaseType: CinemachineVirtualCamera
+  GenerationOptions: 4194303
+  Scripts:
+  - {fileID: 11500000, guid: 39cdf0ea440c3b84f94493363a8e4d51, type: 3}
+  - {fileID: 11500000, guid: 80a6893bdaa10b649b84c8d8cd29c707, type: 3}
+  - {fileID: 11500000, guid: dcccdb7f70555404792ccf57becf1b19, type: 3}
+  - {fileID: 11500000, guid: c604540c540ebbb42ac87f26077ad6f7, type: 3}
+  - {fileID: 11500000, guid: bae37d22e508cc643b4bf8f05c48340d, type: 3}
+  - {fileID: 11500000, guid: 21baf8aa364255a4781501660fb6f633, type: 3}
+  - {fileID: 11500000, guid: c8cbfc37ecaf381479ffe277c260aea8, type: 3}
+  - {fileID: 11500000, guid: 387016a53ba8d9e4ca6e80ab03f5890d, type: 3}
+  - {fileID: 11500000, guid: 5a3b438f84e613449b7cd16c002bd376, type: 3}
+  - {fileID: 11500000, guid: 4b98c5159303ef24a8c963fba0ecf7d5, type: 3}
+  - {fileID: 11500000, guid: 66894c634b2269841a4d377629eaa25a, type: 3}
+  - {fileID: 11500000, guid: 208e492d1fbaa7b4c9438f06346ee954, type: 3}
+  - {fileID: 11500000, guid: 45d39f132e14a14479eaef860cb86f87, type: 3}
+  - {fileID: 11500000, guid: 579f5735539fb5942b5e6956948c25c2, type: 3}
+  - {fileID: 11500000, guid: 5b83f4b00b64033439b8ff4119eb16c9, type: 3}
+  - {fileID: 11500000, guid: 023bffe8ada4b5649aadc8b6168eedf0, type: 3}
+  - {fileID: 11500000, guid: 7fa94942fd5c7bc41a69e674f50f5c73, type: 3}
+  - {fileID: 11500000, guid: cbcafda9571ec484ba3fb3696447498a, type: 3}
+  - {fileID: 11500000, guid: f9cec8fe0d3b8e84ea978d1a595a8c73, type: 3}
+  - {fileID: 11500000, guid: 58a4f5acb89c8044cb77fdcf32a4a2e1, type: 3}
+  - {fileID: 11500000, guid: be9bfdaa8bdc9e44eb0769c4ffe55df7, type: 3}
+  - {fileID: 11500000, guid: d011ab8af4a275a42a4456447c3d0cac, type: 3}

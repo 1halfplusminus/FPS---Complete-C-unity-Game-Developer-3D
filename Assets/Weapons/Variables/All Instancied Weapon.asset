@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecd0f51e6cdda4338b8adc4542076829, type: 3}
+  m_Name: All Instancied Weapon
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _id: 
+  _value:
+    _serializedList:
+    - {fileID: 11400000, guid: f9683900a49744a4b92758beb2d27c04, type: 2}
+    - {fileID: 11400000, guid: f9de7d7fa8c07b64a967b9914e982f1e, type: 2}
+  _added: {fileID: 11400000, guid: de288882df2bc31498196acfb9fd245a, type: 2}
+  _removed: {fileID: 11400000, guid: 8b190c71c8402f944b627b5832ebe67f, type: 2}
+  _cleared: {fileID: 0}

@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: dcdb0bd09e8ed544daca5a114b7fb5f3
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - useEntity: {fileID: 11400000, guid: 2248a251119084f499aa6f1fb61ed548, type: 2}
+  - usePivot: {fileID: 11400000, guid: 5b503559f36ded14faebc48feed1071c, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

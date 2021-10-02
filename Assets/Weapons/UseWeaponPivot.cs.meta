@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 393fb4ed62fca8d4abeac2f5e1a068c2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - gameObjectDatabase: {fileID: 11400000, guid: 6ded84873f07e7b4392865f7e0d5cf06, type: 2}
+  - weaponPivotTag: {fileID: 11400000, guid: a74630d563b31fe45abb0b9e69779764, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

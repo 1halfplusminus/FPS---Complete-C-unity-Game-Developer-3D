@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f905a459d97c84162be2fdcd2bc3a39a, type: 3}
+  m_Name: Playables
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _id: 
+  _value:
+    _serializedKeys:
+    - _usage: 1
+      _value: 1
+      _constant: {fileID: 11400000, guid: 1bdc61a52fffb754f974765edfb2ab4c, type: 2}
+      _variable: {fileID: 0}
+      _variableInstancer: {fileID: 0}
+    - _usage: 0
+      _value: 2
+      _constant: {fileID: 11400000, guid: a96aa7196dab0684a8e18eb88b44dce2, type: 2}
+      _variable: {fileID: 0}
+      _variableInstancer: {fileID: 0}
+    _serializedValues:
+    - {fileID: 11400000, guid: 643de14ace98bd44999fb633e40e1e5d, type: 2}
+    - {fileID: 11400000, guid: 588c76633cd27e343a5506962839142e, type: 2}
+    _duplicateKeyIndices: 
+  _added: {fileID: 0}
+  _removed: {fileID: 0}
+  _cleared: {fileID: 0}

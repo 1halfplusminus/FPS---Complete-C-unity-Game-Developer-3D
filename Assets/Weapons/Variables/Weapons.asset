@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f905a459d97c84162be2fdcd2bc3a39a, type: 3}
+  m_Name: Weapons
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _id: 
+  _value:
+    _serializedKeys:
+    - _usage: 0
+      _value: 1
+      _constant: {fileID: 0}
+      _variable: {fileID: 0}
+      _variableInstancer: {fileID: 0}
+    - _usage: 0
+      _value: 2
+      _constant: {fileID: 0}
+      _variable: {fileID: 0}
+      _variableInstancer: {fileID: 0}
+    - _usage: 0
+      _value: 3
+      _constant: {fileID: 0}
+      _variable: {fileID: 0}
+      _variableInstancer: {fileID: 0}
+    - _usage: 0
+      _value: 4
+      _constant: {fileID: 0}
+      _variable: {fileID: 0}
+      _variableInstancer: {fileID: 0}
+    - _usage: 0
+      _value: 5
+      _constant: {fileID: 0}
+      _variable: {fileID: 0}
+      _variableInstancer: {fileID: 0}
+    _serializedValues:
+    - {fileID: 11400000, guid: f8acb7a7a07254249b8172dee78c5b58, type: 2}
+    - {fileID: 11400000, guid: 0f7e0fa73300b4c468c0a2bf71070bae, type: 2}
+    - {fileID: 11400000, guid: db7cc6ecb73ad794eb8ead692894ced8, type: 2}
+    - {fileID: 11400000, guid: f9de7d7fa8c07b64a967b9914e982f1e, type: 2}
+    - {fileID: 11400000, guid: f9683900a49744a4b92758beb2d27c04, type: 2}
+    _duplicateKeyIndices: 
+  _added: {fileID: 0}
+  _removed: {fileID: 0}
+  _cleared: {fileID: 0}

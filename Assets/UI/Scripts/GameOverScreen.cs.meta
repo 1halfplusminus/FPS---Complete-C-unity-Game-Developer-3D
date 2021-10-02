@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 193c0835f500bc94fabf3e4bff8382b0
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - deathSystem: {fileID: 11400000, guid: c855b307c5584214d8a219103382e878, type: 2}
+  - onGameOver: {fileID: 11400000, guid: 4306df778d9296d4db798ea99790f283, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

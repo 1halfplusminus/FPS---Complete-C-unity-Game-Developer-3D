@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea3d6bb65a5018a48b15aa5e40385c16, type: 3}
+  m_Name: UpdatePlayerTransform
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  position: {fileID: 11400000, guid: 1a7dd4f653d2f8149b4d53d12d0560f0, type: 2}

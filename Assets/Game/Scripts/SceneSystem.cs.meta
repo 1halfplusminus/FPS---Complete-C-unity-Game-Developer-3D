@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8495783bfbac42f4984c1c69d249554a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - reloadCurrentScene: {fileID: 11400000, guid: e514cbdd8c76f914ea11867af80b1699, type: 2}
+  - currentScene: {fileID: 11400000, guid: c8212d71f888bc64b81e49626083d39a, type: 2}
+  - changeToCurrentScene: {fileID: 11400000, guid: 97681245da63f654a86e624b9e371137, type: 2}
+  - startScene: {fileID: 11400000, guid: 0b17a929e2063314f98dd652a1b9245f, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

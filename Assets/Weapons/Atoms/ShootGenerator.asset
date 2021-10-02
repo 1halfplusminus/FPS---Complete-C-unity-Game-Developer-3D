@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 734fbfb568154d32a89d792102f0c779, type: 3}
+  m_Name: ShootGenerator
+  m_EditorClassIdentifier: 
+  FullQualifiedName: Shoot, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  Namespace: 
+  BaseType: Shoot
+  GenerationOptions: 3106557
+  Scripts:
+  - {fileID: 11500000, guid: 792d551491bb3cb408221be61ce2f378, type: 3}
+  - {fileID: 0}
+  - {fileID: 11500000, guid: 248fb43d454e5de4291c7ff066f4b241, type: 3}
+  - {fileID: 11500000, guid: a9925cf425b61a746993366131faf8f4, type: 3}
+  - {fileID: 11500000, guid: a748fffb61fb79748b2e69f02c9a9054, type: 3}
+  - {fileID: 11500000, guid: f062655aa4222e54f900f4441a1d9fd8, type: 3}
+  - {fileID: 11500000, guid: 956f338dc73710941bbf2cbead5bfd43, type: 3}
+  - {fileID: 11500000, guid: 1c34e2385f3bfe5469d9406a83cdd19c, type: 3}
+  - {fileID: 0}
+  - {fileID: 11500000, guid: ffd569d447473094baf8d1b2a3cf9327, type: 3}
+  - {fileID: 11500000, guid: c60fbf285a1b71b4997d83fff0fc0541, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 11500000, guid: 0d5e4787362561a4296568d11ffbac50, type: 3}
+  - {fileID: 11500000, guid: 7fa99c21e269e134eb1b9a9fc370aea9, type: 3}
+  - {fileID: 0}
+  - {fileID: 11500000, guid: 863899b2c8ae84a43b0c95cfe10e347d, type: 3}
+  - {fileID: 11500000, guid: c26e2236e2b8ce04a8c0b596a082041d, type: 3}
+  - {fileID: 11500000, guid: 9758008cffcce3442a6d2b3b1476103e, type: 3}
+  - {fileID: 11500000, guid: 6fa819aaf164db344b17e4b623119373, type: 3}
+  - {fileID: 0}
+  - {fileID: 11500000, guid: 29acea0de67eaec4385d26fee35bdffe, type: 3}

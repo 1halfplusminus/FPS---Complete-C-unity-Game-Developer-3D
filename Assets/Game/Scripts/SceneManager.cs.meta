@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9c8bd958142c7934d89c15a2e65fa80d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - reloadCurrentScene: {fileID: 11400000, guid: e514cbdd8c76f914ea11867af80b1699, type: 2}
+  - currentScene: {instanceID: 0}
+  - changeToCurrentScene: {instanceID: 0}
+  - startScene: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
