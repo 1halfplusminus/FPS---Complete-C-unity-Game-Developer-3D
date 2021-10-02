@@ -26,7 +26,6 @@ public class FirstPersonController : MonoBehaviour
     [SerializeField]
     Vector3Variable cameraForward;
 
-
     [SerializeField]
     Vector3Variable cameraRight;
 
@@ -48,14 +47,10 @@ public class FirstPersonController : MonoBehaviour
 
         Vector3 move = input.Value;
         move = cameraForward.Value * move.z + cameraRight.Value * move.x;
+        var targetPosition = weapon.Value.transform.position + cameraForward.Value;
+        var direction = targetPosition - weapon.Value.transform.position;
+        weapon.Value.transform.rotation = Quaternion.LookRotation(direction, controller.transform.up);
         controller.Move(move * Time.deltaTime * playerSpeed);
-        weapon.Value.transform.rotation = Quaternion.LookRotation(cameraForward.Value, controller.transform.up);
-        /* weapon.Value.transform.LookAt(controller.transform.position + cameraForward.Value); */
-        /*   if (move != Vector3.zero)
-        {
-           gameObject.transform.forward = move;
-        }
-       */
         // Changes the height position of the player..
         if (jumping.Value && groundedPlayer)
         {
@@ -64,5 +59,6 @@ public class FirstPersonController : MonoBehaviour
 
         playerVelocity.y += gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
+
     }
 }

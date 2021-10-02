@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8229518869233100089}
   - component: {fileID: 8229518869233100092}
   - component: {fileID: 8229518869233100093}
-  - component: {fileID: 8229518869233100082}
+  - component: {fileID: 589654421}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Damping: 0
---- !u!114 &8229518869233100082
+--- !u!114 &589654421
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -74,11 +74,11 @@ MonoBehaviour:
   m_RecenterTarget: 0
   m_VerticalAxis:
     Value: 0
-    m_SpeedMode: 0
-    m_MaxSpeed: 60
+    m_SpeedMode: 1
+    m_MaxSpeed: 0.8
     m_AccelTime: 0.1
     m_DecelTime: 0.1
-    m_InputAxisName: 
+    m_InputAxisName: Mouse Y
     m_InputAxisValue: 0
     m_InvertInput: 1
     m_MinValue: -70
@@ -98,11 +98,11 @@ MonoBehaviour:
     m_LegacyVelocityFilterStrength: -1
   m_HorizontalAxis:
     Value: 0
-    m_SpeedMode: 0
-    m_MaxSpeed: 300
+    m_SpeedMode: 1
+    m_MaxSpeed: 0.8
     m_AccelTime: 0.1
     m_DecelTime: 0.1
-    m_InputAxisName: 
+    m_InputAxisName: Mouse X
     m_InputAxisValue: 0
     m_InvertInput: 0
     m_MinValue: -180
@@ -131,9 +131,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8229518869439547191}
   - component: {fileID: 8229518869439547190}
-  - component: {fileID: 611924862}
   - component: {fileID: 611924864}
   - component: {fileID: 611924865}
+  - component: {fileID: 907662589}
   m_Layer: 0
   m_Name: FirstPersonCamera
   m_TagString: Untagged
@@ -186,7 +186,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.93494046, y: 1}
+    m_SensorSize: {x: 1.7765962, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -195,19 +195,6 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 8229518869233100089}
---- !u!114 &611924862
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8229518869439547185}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a57ec088be08e2245b7a860f50546ddd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  XYAxis: {fileID: 11400000, guid: c7876f442492a454b8742b6842922268, type: 2}
 --- !u!114 &611924864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,3 +227,16 @@ MonoBehaviour:
     _constant: {fileID: 0}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 611924864}
+--- !u!114 &907662589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8229518869439547185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a57ec088be08e2245b7a860f50546ddd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  XYAxis: {fileID: 11400000, guid: c7876f442492a454b8742b6842922268, type: 2}

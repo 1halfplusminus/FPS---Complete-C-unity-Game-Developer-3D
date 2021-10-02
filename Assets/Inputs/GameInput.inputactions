@@ -11,7 +11,8 @@
                     "id": "2ab213c8-1ab0-42fd-8594-552663eae3dd",
                     "expectedControlType": "Vector3",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Look",
@@ -19,7 +20,8 @@
                     "id": "122ef2ea-d412-41fd-8922-e8b79858f2fb",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Jumping",
@@ -27,7 +29,8 @@
                     "id": "b7354db0-dded-4d8f-a678-b8271e455bdb",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Firing",
@@ -35,7 +38,8 @@
                     "id": "8a4500d4-a720-4dc0-91eb-19060c340a98",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Zooming",
@@ -43,7 +47,8 @@
                     "id": "a705d898-ce58-49c9-be86-fbb506398da2",
                     "expectedControlType": "Axis",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Change Weapon",
@@ -51,7 +56,8 @@
                     "id": "0b193ee3-d205-439a-9f31-e3140f317728",
                     "expectedControlType": "Axis",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -134,8 +140,8 @@
                 },
                 {
                     "name": "",
-                    "id": "9a90ff49-323e-4851-8acb-29919985dd00",
-                    "path": "<Mouse>/delta",
+                    "id": "6ce9e68f-a37a-4f84-a978-3de2b87108c8",
+                    "path": "<Pointer>/delta",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -210,7 +216,8 @@
                     "id": "b65671fa-0367-4b00-a640-6ded070d6631",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [

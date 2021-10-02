@@ -17,7 +17,12 @@ public class DestroyOldWeaponOnWeaponChange : MonoBehaviour
            {
                if (weaponEntity.entity.Id == entity.Value.Id)
                {
-                   Destroy(weaponPivot.Value.GetComponent<Transform>().GetChild(0)?.gameObject);
+                   var weapons = weaponPivot.Value.GetComponent<Transform>();
+                   if (weapons.childCount > 1)
+                   {
+                       Destroy(weaponPivot.Value.GetComponent<Transform>().GetChild(0)?.gameObject);
+                   }
+
                }
            }
         );
