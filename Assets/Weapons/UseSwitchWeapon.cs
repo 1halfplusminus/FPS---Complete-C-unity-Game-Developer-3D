@@ -18,7 +18,7 @@ public class UseSwitchWeapon : MonoBehaviour
         onChangeWeapon
         .Observe()
         .SkipWhile((changing) => !changing)
-        /*         .ThrottleFirst(TimeSpan.FromMilliseconds(250)) */
+        .ThrottleFirst(TimeSpan.FromMilliseconds(250))
         .TakeUntilDisable(this)
         .Subscribe((changing) =>
         {

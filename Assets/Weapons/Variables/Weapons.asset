@@ -17,11 +17,6 @@ MonoBehaviour:
   _value:
     _serializedKeys:
     - _usage: 0
-      _value: 1
-      _constant: {fileID: 0}
-      _variable: {fileID: 0}
-      _variableInstancer: {fileID: 0}
-    - _usage: 0
       _value: 2
       _constant: {fileID: 0}
       _variable: {fileID: 0}
@@ -32,21 +27,14 @@ MonoBehaviour:
       _variable: {fileID: 0}
       _variableInstancer: {fileID: 0}
     - _usage: 0
-      _value: 4
-      _constant: {fileID: 0}
-      _variable: {fileID: 0}
-      _variableInstancer: {fileID: 0}
-    - _usage: 0
-      _value: 5
+      _value: 1
       _constant: {fileID: 0}
       _variable: {fileID: 0}
       _variableInstancer: {fileID: 0}
     _serializedValues:
-    - {fileID: 11400000, guid: f8acb7a7a07254249b8172dee78c5b58, type: 2}
     - {fileID: 11400000, guid: 0f7e0fa73300b4c468c0a2bf71070bae, type: 2}
     - {fileID: 11400000, guid: db7cc6ecb73ad794eb8ead692894ced8, type: 2}
-    - {fileID: 11400000, guid: f9de7d7fa8c07b64a967b9914e982f1e, type: 2}
-    - {fileID: 11400000, guid: f9683900a49744a4b92758beb2d27c04, type: 2}
+    - {fileID: 11400000, guid: f8acb7a7a07254249b8172dee78c5b58, type: 2}
     _duplicateKeyIndices: 
   _added: {fileID: 0}
   _removed: {fileID: 0}

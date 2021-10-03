@@ -1,19 +1,25 @@
 using UnityEngine;
 using UnityAtoms;
 using UnityAtoms.BaseAtoms;
-
+using System.Collections.Generic;
 
 [CreateAssetMenu(fileName = "DamagesDatabase", menuName = "Zombie Runner/DamagesDatabase", order = 0)]
 public class WeaponDatabase : ScriptableObject
 {
     [SerializeField] Armories armories;
 
-    [SerializeField] AtomCollectionReference weapons;
+    [SerializeField] AtomCollection weapons;
 
-    [SerializeField] AtomCollectionReference equipedWeapon;
+    [SerializeField] AtomCollection equipedWeapon;
 
     [SerializeField] EntityEvent onEntityRemoved;
 
+    [SerializeField] List<WeaponVariable> defaultWeapon;
+    void Awake()
+    {
+        Debug.Log("Enable weapon database");
+        OnEnable();
+    }
     public bool TryGetDommage(string weaponId, out int damage)
     {
         WeaponVariable weapon;
@@ -24,7 +30,7 @@ public class WeaponDatabase : ScriptableObject
     public bool TryGetWeapon(string weaponId, out WeaponVariable weapon)
     {
         AtomBaseVariable variable;
-        weapons.Collection.Value.TryGetValue(new StringReference(weaponId), out variable);
+        weapons.Value.TryGetValue(new StringReference(weaponId), out variable);
         if (variable is WeaponVariable)
         {
             weapon = variable as WeaponVariable;
@@ -35,11 +41,11 @@ public class WeaponDatabase : ScriptableObject
     }
     public WeaponVariable GetEquipedWeapon(string id)
     {
-        var equiped = equipedWeapon.Collection.Value.Get<WeaponVariable>(id);
+        var equiped = equipedWeapon.Value.Get<WeaponVariable>(id);
         if (!equiped)
         {
             WeaponVariable baseWeapon = ScriptableObject.CreateInstance<WeaponVariable>();
-            equipedWeapon.Collection.GetValue().Add(id, baseWeapon);
+            equipedWeapon.GetValue().Add(id, baseWeapon);
             return baseWeapon;
         }
         return equiped;
@@ -54,7 +60,7 @@ public class WeaponDatabase : ScriptableObject
     }
     public bool EquipWeapon(IEntity entity, WeaponVariable weapon)
     {
-        equipedWeapon.Collection.GetValue().Add(entity.Id, weapon);
+        equipedWeapon.GetValue().Add(entity.Id, weapon);
         return true;
     }
     public GameObject GetWeaponPrefabs(Weapon weapon)
@@ -63,18 +69,23 @@ public class WeaponDatabase : ScriptableObject
     }
     private void OnEnable()
     {
-        equipedWeapon.Collection.Value.Clear();
+        equipedWeapon.Value.Clear();
         onEntityRemoved.Register(ClearEntity);
         Debug.Log("Enable weapon database");
+        foreach (var item in defaultWeapon)
+        {
+            Debug.Log("Add weapon " + item.Id + " to database");
+            weapons.GetValue().Add(item.Value.Id, item);
+        }
     }
     private void ClearEntity(Entity entity)
     {
         Debug.Log("Remove entity: " + entity.Id + " from weapon database");
-        equipedWeapon.Collection.GetValue().Remove(entity.Id);
+        equipedWeapon.GetValue().Remove(entity.Id);
     }
     private void OnDisable()
     {
-        equipedWeapon.Collection.Value.Clear();
+        equipedWeapon.Value.Clear();
         Debug.Log("Disable weapon database");
     }
 }

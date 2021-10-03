@@ -7,18 +7,18 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 16fbe1dba96777843895a8d6e29f580d, type: 3}
   m_Name: Weapon Database
   m_EditorClassIdentifier: 
   armories: {fileID: 11400000, guid: 946f385f7df6c9049b9f8a79db2b546e, type: 2}
-  weapons:
-    _usage: 0
-    _collection: {fileID: 11400000, guid: 0d20f0353c17f654a9fce105beb0aaa7, type: 2}
-    _instancer: {fileID: 0}
-  equipedWeapon:
-    _usage: 0
-    _collection: {fileID: 11400000, guid: 6a9119ed7150c0e429dfc10d78b0a0a3, type: 2}
-    _instancer: {fileID: 0}
+  weapons: {fileID: 11400000, guid: 0d20f0353c17f654a9fce105beb0aaa7, type: 2}
+  equipedWeapon: {fileID: 11400000, guid: 6a9119ed7150c0e429dfc10d78b0a0a3, type: 2}
   onEntityRemoved: {fileID: 11400000, guid: 0b1afe15298ee7341aa5bc06a8e32c92, type: 2}
+  defaultWeapon:
+  - {fileID: 11400000, guid: 0f7e0fa73300b4c468c0a2bf71070bae, type: 2}
+  - {fileID: 11400000, guid: db7cc6ecb73ad794eb8ead692894ced8, type: 2}
+  - {fileID: 11400000, guid: f8acb7a7a07254249b8172dee78c5b58, type: 2}
+  - {fileID: 11400000, guid: f9683900a49744a4b92758beb2d27c04, type: 2}
+  - {fileID: 11400000, guid: f9de7d7fa8c07b64a967b9914e982f1e, type: 2}

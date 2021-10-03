@@ -12,7 +12,7 @@ public class Armories : ScriptableObject
     struct Weapon
     {
         public GameObject Mesh;
-        public WeaponReference Entity;
+        public WeaponVariable Entity;
 
     }
     [SerializeField] List<Weapon> meshes;
