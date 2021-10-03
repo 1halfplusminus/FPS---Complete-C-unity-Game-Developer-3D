@@ -165,7 +165,7 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
                     ""id"": ""6ce9e68f-a37a-4f84-a978-3de2b87108c8"",
                     ""path"": ""<Pointer>/delta"",
                     ""interactions"": """",
-                    ""processors"": """",
+                    ""processors"": ""ScaleVector2(x=1.5,y=1.5)"",
                     ""groups"": """",
                     ""action"": ""Look"",
                     ""isComposite"": false,
@@ -233,7 +233,7 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
             ""id"": ""34482201-b319-4bbc-8289-6b89536fb3f1"",
             ""actions"": [
                 {
-                    ""name"": ""Hit Cursor"",
+                    ""name"": ""Hide Cursor"",
                     ""type"": ""Button"",
                     ""id"": ""b65671fa-0367-4b00-a640-6ded070d6631"",
                     ""expectedControlType"": ""Button"",
@@ -250,7 +250,35 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Hit Cursor"",
+                    ""action"": ""Hide Cursor"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""Game"",
+            ""id"": ""012a0956-01e1-4d7b-bbc3-361e8c46e48d"",
+            ""actions"": [
+                {
+                    ""name"": ""Exit Game"",
+                    ""type"": ""Button"",
+                    ""id"": ""35aff7df-0168-4d36-80fd-815eb256e521"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""b51f1f40-e267-4cb1-899a-6e3dac2b0c90"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Exit Game"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -269,7 +297,10 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
         m_Gameplay_ChangeWeapon = m_Gameplay.FindAction("Change Weapon", throwIfNotFound: true);
         // Debug
         m_Debug = asset.FindActionMap("Debug", throwIfNotFound: true);
-        m_Debug_HitCursor = m_Debug.FindAction("Hit Cursor", throwIfNotFound: true);
+        m_Debug_HideCursor = m_Debug.FindAction("Hide Cursor", throwIfNotFound: true);
+        // Game
+        m_Game = asset.FindActionMap("Game", throwIfNotFound: true);
+        m_Game_ExitGame = m_Game.FindAction("Exit Game", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -402,12 +433,12 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
     // Debug
     private readonly InputActionMap m_Debug;
     private IDebugActions m_DebugActionsCallbackInterface;
-    private readonly InputAction m_Debug_HitCursor;
+    private readonly InputAction m_Debug_HideCursor;
     public struct DebugActions
     {
         private @GameInput m_Wrapper;
         public DebugActions(@GameInput wrapper) { m_Wrapper = wrapper; }
-        public InputAction @HitCursor => m_Wrapper.m_Debug_HitCursor;
+        public InputAction @HideCursor => m_Wrapper.m_Debug_HideCursor;
         public InputActionMap Get() { return m_Wrapper.m_Debug; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -417,20 +448,53 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
         {
             if (m_Wrapper.m_DebugActionsCallbackInterface != null)
             {
-                @HitCursor.started -= m_Wrapper.m_DebugActionsCallbackInterface.OnHitCursor;
-                @HitCursor.performed -= m_Wrapper.m_DebugActionsCallbackInterface.OnHitCursor;
-                @HitCursor.canceled -= m_Wrapper.m_DebugActionsCallbackInterface.OnHitCursor;
+                @HideCursor.started -= m_Wrapper.m_DebugActionsCallbackInterface.OnHideCursor;
+                @HideCursor.performed -= m_Wrapper.m_DebugActionsCallbackInterface.OnHideCursor;
+                @HideCursor.canceled -= m_Wrapper.m_DebugActionsCallbackInterface.OnHideCursor;
             }
             m_Wrapper.m_DebugActionsCallbackInterface = instance;
             if (instance != null)
             {
-                @HitCursor.started += instance.OnHitCursor;
-                @HitCursor.performed += instance.OnHitCursor;
-                @HitCursor.canceled += instance.OnHitCursor;
+                @HideCursor.started += instance.OnHideCursor;
+                @HideCursor.performed += instance.OnHideCursor;
+                @HideCursor.canceled += instance.OnHideCursor;
             }
         }
     }
     public DebugActions @Debug => new DebugActions(this);
+
+    // Game
+    private readonly InputActionMap m_Game;
+    private IGameActions m_GameActionsCallbackInterface;
+    private readonly InputAction m_Game_ExitGame;
+    public struct GameActions
+    {
+        private @GameInput m_Wrapper;
+        public GameActions(@GameInput wrapper) { m_Wrapper = wrapper; }
+        public InputAction @ExitGame => m_Wrapper.m_Game_ExitGame;
+        public InputActionMap Get() { return m_Wrapper.m_Game; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(GameActions set) { return set.Get(); }
+        public void SetCallbacks(IGameActions instance)
+        {
+            if (m_Wrapper.m_GameActionsCallbackInterface != null)
+            {
+                @ExitGame.started -= m_Wrapper.m_GameActionsCallbackInterface.OnExitGame;
+                @ExitGame.performed -= m_Wrapper.m_GameActionsCallbackInterface.OnExitGame;
+                @ExitGame.canceled -= m_Wrapper.m_GameActionsCallbackInterface.OnExitGame;
+            }
+            m_Wrapper.m_GameActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @ExitGame.started += instance.OnExitGame;
+                @ExitGame.performed += instance.OnExitGame;
+                @ExitGame.canceled += instance.OnExitGame;
+            }
+        }
+    }
+    public GameActions @Game => new GameActions(this);
     public interface IGameplayActions
     {
         void OnMove(InputAction.CallbackContext context);
@@ -442,6 +506,10 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
     }
     public interface IDebugActions
     {
-        void OnHitCursor(InputAction.CallbackContext context);
+        void OnHideCursor(InputAction.CallbackContext context);
+    }
+    public interface IGameActions
+    {
+        void OnExitGame(InputAction.CallbackContext context);
     }
 }

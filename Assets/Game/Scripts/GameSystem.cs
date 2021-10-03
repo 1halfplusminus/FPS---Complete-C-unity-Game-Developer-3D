@@ -9,7 +9,7 @@ public class GameSystem : MonoBehaviour
 
     [SerializeField] BoolEventReference onGameOverScreen;
 
-
+    [SerializeField] BoolEventReference onExitGame;
 
     void OnGameOverScreen()
     {
@@ -25,6 +25,13 @@ public class GameSystem : MonoBehaviour
     void Awake()
     {
         onGameOverScreen.Event.Register(OnGameOverScreen);
+        onExitGame.Event.Observe().TakeUntilDisable(this).Subscribe((b) =>
+        {
+            if (b)
+            {
+                gameManager.Quit();
+            }
+        });
     }
     void Start()
     {

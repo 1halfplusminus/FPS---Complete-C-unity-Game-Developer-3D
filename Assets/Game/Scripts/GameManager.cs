@@ -18,7 +18,13 @@ public class GameManager : ScriptableObject
         InGame = true;
     }
     public void QuitInGame() { InGame = false; }
-
+    public void Quit()
+    {
+        #if UNITY_EDITOR
+                UnityEditor.EditorApplication.isPlaying = false;
+        #endif
+                Application.Quit();
+    }
     // TODO: Better pause handeling
     public void Pause()
     {

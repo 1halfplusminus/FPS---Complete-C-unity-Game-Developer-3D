@@ -19,13 +19,7 @@ public class SceneManager : ScriptableObject
         Debug.Log("Realod Scene " + currentScene.Value);
         changeToCurrentScene.Do();
     }
-    public void Quit()
-    {
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-#endif
-        Application.Quit();
-    }
+  
     void Awake()
     {
         Init();

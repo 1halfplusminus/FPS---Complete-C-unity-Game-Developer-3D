@@ -75,9 +75,9 @@ MonoBehaviour:
   m_VerticalAxis:
     Value: 0
     m_SpeedMode: 1
-    m_MaxSpeed: 0.8
-    m_AccelTime: 0.1
-    m_DecelTime: 0.1
+    m_MaxSpeed: 0.1
+    m_AccelTime: 0.09
+    m_DecelTime: 0.09
     m_InputAxisName: Mouse Y
     m_InputAxisValue: 0
     m_InvertInput: 1
@@ -99,9 +99,9 @@ MonoBehaviour:
   m_HorizontalAxis:
     Value: 0
     m_SpeedMode: 1
-    m_MaxSpeed: 0.8
-    m_AccelTime: 0.1
-    m_DecelTime: 0.1
+    m_MaxSpeed: 0.15
+    m_AccelTime: 0.09
+    m_DecelTime: 0.09
     m_InputAxisName: Mouse X
     m_InputAxisValue: 0
     m_InvertInput: 0
@@ -186,7 +186,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7765962, y: 1}
+    m_SensorSize: {x: 1.1586975, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
