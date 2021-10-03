@@ -11,7 +11,9 @@ public class Armories : ScriptableObject
     [Serializable]
     struct WeaponMesh
     {
+        [SerializeReference]
         public GameObject Mesh;
+        [SerializeField]
         public WeaponVariable Entity;
 
     }
@@ -31,7 +33,10 @@ public class Armories : ScriptableObject
         foreach (var item in meshes)
         {
             var variable = ScriptableObject.CreateInstance<GameObjectVariable>();
-            variable.SetValue(item.Mesh.gameObject);
+            if (item.Mesh != null)
+            {
+                variable.SetValue(item.Mesh.gameObject);
+            }
             collection[item.Entity.Value.Id] = variable;
         }
     }
