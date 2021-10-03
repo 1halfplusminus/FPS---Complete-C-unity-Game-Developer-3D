@@ -9,16 +9,22 @@ using UnityAtoms;
 public class Armories : ScriptableObject
 {
     [Serializable]
-    struct Weapon
+    struct WeaponMesh
     {
         public GameObject Mesh;
         public WeaponVariable Entity;
 
     }
-    [SerializeField] List<Weapon> meshes;
+    [SerializeField] List<WeaponMesh> meshes;
+
 
     Dictionary<string, GameObjectVariable> collection;
-    private void OnEnable()
+
+    void Awake()
+    {
+        OnEnable();
+    }
+    void OnEnable()
     {
         collection = new Dictionary<string, GameObjectVariable>();
         Debug.Log("Armories constructor");
@@ -32,6 +38,11 @@ public class Armories : ScriptableObject
 
     public GameObject Get(IEntity entity)
     {
-        return collection[entity.Id].Value;
+        Debug.Log("here");
+        if (collection.ContainsKey(entity.Id))
+        {
+            return collection[entity.Id].Value;
+        }
+        return null;
     }
 }
