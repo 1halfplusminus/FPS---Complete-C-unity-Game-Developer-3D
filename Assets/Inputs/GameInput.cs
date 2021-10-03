@@ -284,8 +284,8 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
             ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""b51f1f40-e267-4cb1-899a-6e3dac2b0c90"",
-                    ""path"": ""<Keyboard>/escape"",
+                    ""id"": ""c7906fa6-fa0d-40c5-b92f-b1b63889301c"",
+                    ""path"": ""<Keyboard>/q"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

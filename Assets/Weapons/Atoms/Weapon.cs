@@ -5,7 +5,7 @@ using UnityEngine;
 
 
 [Serializable]
-public struct Weapon : IEntity, IEquatable<IEntity>, ISerializationCallbackReceiver
+public struct Weapon : IEntity, IEquatable<IEntity>
 {
     public string Id;
     public string name;
@@ -41,28 +41,4 @@ public struct Weapon : IEntity, IEquatable<IEntity>, ISerializationCallbackRecei
         return other.Id == Id;
     }
 
-    public void OnAfterDeserialize()
-    {
-        /*  if (_hitEffect != null)
-         {
-             hitEffect = _hitEffect.Value;
-         }
-         if (_shootEffect != null)
-         {
-             shootEffect = _shootEffect.Value;
-         } */
-
-    }
-
-    public void OnBeforeSerialize()
-    {
-        /*   if (_hitEffect != null)
-          {
-              hitEffect = _hitEffect.Value;
-          }
-          if (_shootEffect != null)
-          {
-              shootEffect = _shootEffect.Value;
-          } */
-    }
 }
