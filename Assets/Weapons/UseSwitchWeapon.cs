@@ -13,12 +13,12 @@ public class UseSwitchWeapon : MonoBehaviour
     [SerializeField] WeaponQueue weapons;
     [SerializeField] WeaponReference currentWeapon;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         onChangeWeapon
         .Observe()
-        .SkipWhile((changing) => changing)
-        .ThrottleFirst(TimeSpan.FromMilliseconds(250))
+        .SkipWhile((changing) => !changing)
+        /*         .ThrottleFirst(TimeSpan.FromMilliseconds(250)) */
         .TakeUntilDisable(this)
         .Subscribe((changing) =>
         {

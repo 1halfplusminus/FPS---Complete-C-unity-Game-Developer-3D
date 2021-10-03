@@ -74,9 +74,9 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""Change Weapon"",
-                    ""type"": ""Value"",
+                    ""type"": ""Button"",
                     ""id"": ""0b193ee3-d205-439a-9f31-e3140f317728"",
-                    ""expectedControlType"": ""Axis"",
+                    ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true

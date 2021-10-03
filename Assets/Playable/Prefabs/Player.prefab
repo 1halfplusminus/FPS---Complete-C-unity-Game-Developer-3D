@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1224165119}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -174,7 +174,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3884540118695415451}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.51, z: 0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -208,6 +208,8 @@ GameObject:
   - component: {fileID: 3884540119995525695}
   - component: {fileID: 3884540119995525711}
   - component: {fileID: 3884540119995525712}
+  - component: {fileID: 3884540119995525726}
+  - component: {fileID: 3884540119995525764}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -297,7 +299,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3884540119522503983}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
@@ -316,23 +318,88 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents:
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 0bc4fec96bbb478439528c2c5f07fd41, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.InputSystem.CallbackContextInterpreter`8[[UnityEngine.Vector3,
+          UnityEngine
+        m_MethodName: Interpret
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 2ab213c8-1ab0-42fd-8594-552663eae3dd
     m_ActionName: Gameplay/Move[/Keyboard/leftArrow,/Keyboard/rightArrow,/Keyboard/upArrow,/Keyboard/downArrow]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: e6da6426db53c5c4a8446043859bbc6c, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.InputSystem.CallbackContextInterpreter`8[[UnityEngine.Vector2,
+          UnityEngine
+        m_MethodName: Interpret
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 122ef2ea-d412-41fd-8922-e8b79858f2fb
     m_ActionName: Gameplay/Look[/Mouse/delta]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: b0a2be0c32e825041863d1411e7add14, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.InputSystem.CallbackContextInterpreter`8[[System.Int32,
+          mscorlib
+        m_MethodName: Interpret
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: b7354db0-dded-4d8f-a678-b8271e455bdb
     m_ActionName: Gameplay/Jumping[/Keyboard/space]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: d4ff20f8e12d8984cbf830bc3fd44268, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.InputSystem.CallbackContextInterpreter`8[[System.Single,
+          mscorlib
+        m_MethodName: Interpret
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 8a4500d4-a720-4dc0-91eb-19060c340a98
-    m_ActionName: Gameplay/Firing[/Mouse/press]
+    m_ActionName: Gameplay/New action1
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 452174d1cbcf76d4a988df00d7f550be, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.InputSystem.CallbackContextInterpreter`8[[System.Single,
+          mscorlib
+        m_MethodName: Interpret
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: a705d898-ce58-49c9-be86-fbb506398da2
     m_ActionName: Gameplay/Zooming[/Mouse/middleButton]
   - m_PersistentCalls:
@@ -340,9 +407,26 @@ MonoBehaviour:
     m_ActionId: b65671fa-0367-4b00-a640-6ded070d6631
     m_ActionName: Debug/Hit Cursor[/Keyboard/escape]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 52d12b6edec5cfc46bbf530f07de564c, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.InputSystem.CallbackContextInterpreter`8[[System.Single,
+          mscorlib
+        m_MethodName: Interpret
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 0b193ee3-d205-439a-9f31-e3140f317728
-    m_ActionName: Gameplay/Change Weapon[/Mouse/scroll/x,/Mouse/scroll/y]
+    m_ActionName: Gameplay/Change Weapon[/Mouse/middleButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 35aff7df-0168-4d36-80fd-815eb256e521
+    m_ActionName: Game/Exit Game[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Gameplay
@@ -771,6 +855,44 @@ MonoBehaviour:
     _variableInstancer: {fileID: 3884540119995525644}
   currentAmmoInSlot:
     value: 0
+--- !u!114 &3884540119995525726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3884540119522503983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f745fbf149210046ac3aac3eb591364, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  increaseAmmo:
+    _usage: 0
+    _event: {fileID: 11400000, guid: 40b0c1acd18eb9d479e3d5bde17c88f8, type: 2}
+    _eventInstancer: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
+  ammoSlots: {fileID: 11400000, guid: d6adaae85ea054f47ba9d19340c9a74c, type: 2}
+--- !u!114 &3884540119995525764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3884540119522503983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c474fc566cdb61f44bd29d5cf9e4e77f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onWeaponPickup:
+    _usage: 0
+    _event: {fileID: 11400000, guid: 539832d1dc0ef574298c61edae7d309c, type: 2}
+    _eventInstancer: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
+  ownedWeapon: {fileID: 11400000, guid: 0fac5671c3c3ee04fb231dea884b698e, type: 2}
 --- !u!1 &3884540119976875660
 GameObject:
   m_ObjectHideFlags: 0
