@@ -225,6 +225,17 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
                     ""action"": ""Change Weapon"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""310b39ba-4b8d-4ef5-b421-d4af0154e1bb"",
+                    ""path"": ""<Keyboard>/v"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Change Weapon"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
