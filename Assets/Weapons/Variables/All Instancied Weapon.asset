@@ -15,9 +15,7 @@ MonoBehaviour:
   _developerDescription: 
   _id: 
   _value:
-    _serializedList:
-    - {fileID: 11400000, guid: f9683900a49744a4b92758beb2d27c04, type: 2}
-    - {fileID: 11400000, guid: f9de7d7fa8c07b64a967b9914e982f1e, type: 2}
+    _serializedList: []
   _added: {fileID: 11400000, guid: de288882df2bc31498196acfb9fd245a, type: 2}
   _removed: {fileID: 11400000, guid: 8b190c71c8402f944b627b5832ebe67f, type: 2}
   _cleared: {fileID: 0}

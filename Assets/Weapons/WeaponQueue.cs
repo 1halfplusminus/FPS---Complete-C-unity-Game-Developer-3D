@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityAtoms;
 using UnityAtoms.BaseAtoms;
 using UniRx;
-using UnityEngine;
 using System.Linq;
 
 [CreateAssetMenu(fileName = "WeaponQueue", menuName = "Zombie Runner/WeaponQueue", order = 0)]
