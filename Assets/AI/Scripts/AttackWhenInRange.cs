@@ -5,30 +5,40 @@ using UnityAtoms.BaseAtoms;
 using UnityAtoms;
 using UnityAtoms.MonoHooks;
 using UnityAtoms.FSM;
-
+using UniRx;
+using UniRx.Triggers;
+using System.Collections.Generic;
+using System.Linq;
 class AttackWhenInRange : MonoBehaviour
 {
+    [SerializeField] StringConstant ATTACK_COMMAND;
     [SerializeField] FloatReference turnSpeed;
     [SerializeField] ColliderGameObjectEventReference onRange;
 
     [SerializeField]
     FiniteStateMachineReference state;
 
-    [SerializeField] StringReference attackCommand;
     [SerializeField] StringReference attackState;
     [SerializeField] HitEventReference onHit;
 
+    [SerializeField] List<StringConstant> dontAttackOnState;
     ColliderGameObject attack;
     void Start()
     {
-        onRange.Event.Register(OnRangeEnter);
-        state.Machine.OnStateCooldown(attackState.Value, (state) =>
+        onRange
+        .Event
+        .Observe()
+        .TakeUntilDisable(this)
+        .Subscribe(OnRangeEnter);
+
+        state.Machine.OnStateCooldown(attackState.Value, (stateValue) =>
          {
-             if (state == attackState.Value)
+             if (stateValue == attackState.Value)
              {
                  FaceTarget();
              }
          }, gameObject);
+
     }
     // TODO: Put that somewhere else in an extension class for example
     void FaceTarget()
@@ -47,13 +57,15 @@ class AttackWhenInRange : MonoBehaviour
     }
     void OnRangeEnter(ColliderGameObject e)
     {
+
         attack = e;
         Debug.Log(e.GameObject.name + " is in attack range " + e.Collider.name + " init attack");
-        state.Machine.SetValue(attackState.Value);
-    }
-    private void OnDestroy()
-    {
-        onRange.Event.Unregister(OnRangeEnter);
+        if (!dontAttackOnState
+        .Select((sc) => sc.Value)
+        .Contains(state.Machine.Value))
+        {
+            state.Machine.Dispatch(ATTACK_COMMAND.Value);
+        }
     }
 
 }

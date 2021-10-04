@@ -7,6 +7,7 @@ using UnityAtoms.FSM;
 [RequireComponent(typeof(Animator))]
 public class EnemyStateSync : MonoBehaviour
 {
+    [SerializeField] StringConstant DEAD_STATE;
     [SerializeField] StringConstant ATTACK_STATE;
     [SerializeField] StringConstant PROVOKED_STATE;
 
@@ -19,9 +20,11 @@ public class EnemyStateSync : MonoBehaviour
     {
         var animator = GetComponent<Animator>();
         var lastState = stateMachine.Machine.Value;
+        var dead = false;
         stateMachine.Machine.OnStateCooldown(ATTACK_STATE.Value, (state) =>
        {
-           if (state == ATTACK_STATE.Value)
+
+           if (state == ATTACK_STATE.Value && !dead)
            {
                animator.SetTrigger("Attacking");
            }
@@ -29,6 +32,14 @@ public class EnemyStateSync : MonoBehaviour
        }, gameObject);
         stateMachine.Machine.OnUpdate((t, s) =>
         {
+            animator.SetFloat("Move", Mathf.Abs(velocity.Value.z));
+            if (s == DEAD_STATE.Value)
+            {
+                Debug.Log(gameObject.name + " Change animator state to dead");
+                animator.SetBool("Dead", true);
+                dead = true;
+                return;
+            }
             if (s == PROVOKED_STATE.Value)
             {
                 animator.SetTrigger("Provoked");
@@ -40,11 +51,12 @@ public class EnemyStateSync : MonoBehaviour
                 {
                     animator.SetFloat("Move", 0f);
                 }
-                if (s == MOVE_STATE.Value)
-                {
-                    Debug.Log("Change animator state to move");
-                    animator.SetFloat("Move", Mathf.Abs(velocity.Value.z));
-                }
+                /*  if (s == MOVE_STATE.Value)
+                 {
+                     Debug.Log(gameObject.name + " Change animator state to move");
+
+                 } */
+
                 lastState = s;
             }
 

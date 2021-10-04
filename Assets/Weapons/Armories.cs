@@ -43,7 +43,6 @@ public class Armories : ScriptableObject
 
     public GameObject Get(IEntity entity)
     {
-        Debug.Log("here");
         if (collection.ContainsKey(entity.Id))
         {
             return collection[entity.Id].Value;

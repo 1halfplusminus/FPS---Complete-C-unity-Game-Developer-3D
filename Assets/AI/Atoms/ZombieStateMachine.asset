@@ -78,6 +78,19 @@ MonoBehaviour:
         _variable: {fileID: 0}
         _variableInstancer: {fileID: 0}
       _subMachine: {fileID: 0}
+    - _id:
+        _usage: 1
+        _value: PROVOKED
+        _constant: {fileID: 11400000, guid: 7a366bf48abc0754880181e30db0610e, type: 2}
+        _variable: {fileID: 0}
+        _variableInstancer: {fileID: 0}
+      _cooldown:
+        _usage: 0
+        _value: 0
+        _constant: {fileID: 0}
+        _variable: {fileID: 0}
+        _variableInstancer: {fileID: 0}
+      _subMachine: {fileID: 0}
   _transitions:
     _list:
     - _fromState:
@@ -144,6 +157,26 @@ MonoBehaviour:
         _usage: 1
         _value: IDLE
         _constant: {fileID: 11400000, guid: f493e4d418e2aa94a9541d799082ca61, type: 2}
+        _variable: {fileID: 0}
+        _variableInstancer: {fileID: 0}
+      _toState:
+        _usage: 1
+        _value: PROVOKED
+        _constant: {fileID: 11400000, guid: f59b92bad5dc21949846d1c01bf760a4, type: 2}
+        _variable: {fileID: 0}
+        _variableInstancer: {fileID: 0}
+      _command:
+        _usage: 1
+        _value: PROVOKE
+        _constant: {fileID: 11400000, guid: 3e277230ff393444988f6e05138c1db1, type: 2}
+        _variable: {fileID: 0}
+        _variableInstancer: {fileID: 0}
+      _testCondition: {fileID: 0}
+      _raiseEventToCompleteTransition: 0
+    - _fromState:
+        _usage: 1
+        _value: IDLE
+        _constant: {fileID: 11400000, guid: f59b92bad5dc21949846d1c01bf760a4, type: 2}
         _variable: {fileID: 0}
         _variableInstancer: {fileID: 0}
       _toState:

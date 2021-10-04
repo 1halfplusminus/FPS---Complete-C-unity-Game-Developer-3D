@@ -38,6 +38,7 @@ public class TrackTarget : MonoBehaviour, IStateable
         onHit.Event.Register(OnHit);
         state.Machine.OnUpdate((delta, value) =>
         {
+
             if (value == provokedState.Value)
             {
                 Track();
@@ -81,11 +82,11 @@ public class TrackTarget : MonoBehaviour, IStateable
     {
         if (navMeshAgent.velocity != Vector3.zero)
         {
-            state.Machine.SetValue(MOVING_STATE.Value, true);
+            state.Machine.SetValue(MOVING_STATE.Value);
         }
         else
         {
-            state.Machine.SetValue(IDLE_STATE.Value, true);
+            state.Machine.SetValue(IDLE_STATE.Value);
         }
         velocity.Value = navMeshAgent.velocity;
     }
@@ -103,5 +104,9 @@ public class TrackTarget : MonoBehaviour, IStateable
         state.Machine.Dispatch(command);
     }
 
-
+    public void OnDisable()
+    {
+        Debug.Log(gameObject.name + " Disable Track");
+        StopAllCoroutines();
+    }
 }
