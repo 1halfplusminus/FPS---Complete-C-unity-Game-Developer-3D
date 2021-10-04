@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _developerDescription: 
   _id: Player Health
-  _value: 10
-  _changed: {fileID: 0}
+  _value: 15
+  _changed: {fileID: 11400000, guid: 84896b1a8c0d3c34fa7653210fc71c95, type: 2}
   _changedWithHistory: {fileID: 0}
   _triggerChangedOnOnEnable: 0
   _triggerChangedWithHistoryOnOnEnable: 0
-  _oldValue: 10
+  _oldValue: 15
   _initialValue: 15
   _preChangeTransformers: []

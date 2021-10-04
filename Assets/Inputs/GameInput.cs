@@ -165,7 +165,7 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
                     ""id"": ""6ce9e68f-a37a-4f84-a978-3de2b87108c8"",
                     ""path"": ""<Pointer>/delta"",
                     ""interactions"": """",
-                    ""processors"": ""ScaleVector2(x=1.5,y=1.5)"",
+                    ""processors"": ""ScaleVector2(x=1.3,y=1.3)"",
                     ""groups"": """",
                     ""action"": ""Look"",
                     ""isComposite"": false,

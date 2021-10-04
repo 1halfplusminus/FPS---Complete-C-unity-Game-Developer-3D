@@ -2,6 +2,8 @@ using UnityEngine;
 using UnityAtoms.BaseAtoms;
 using UnityAtoms;
 using UniRx;
+using System;
+
 public class UseAmmoSlots : MonoBehaviour
 {
     [SerializeField] AmmoSlots ammoSlots;
@@ -17,11 +19,17 @@ public class UseAmmoSlots : MonoBehaviour
     {
         currentAmmoInSlot = ammoSlots[equipedWeapon.Value.AmmoType];
         currentEquipedWeaponAmmo.Value = currentAmmoInSlot.Value;
+        Action<int> changeAmmo = (int v) =>
+         {
+             currentEquipedWeaponAmmo.Value = v;
+         };
+        var currentSlotObserver = currentAmmoInSlot.Subscribe(changeAmmo);
         onWeaponChange.Event.Observe().TakeUntilDisable(this).Subscribe((w) =>
         {
+            currentSlotObserver.Dispose();
             Debug.Log("Weapon changed get ammo type for weapon");
             currentAmmoInSlot = ammoSlots[w.AmmoType];
-            currentEquipedWeaponAmmo.Value = currentAmmoInSlot.Value;
+            currentSlotObserver = currentAmmoInSlot.Subscribe(changeAmmo);
         });
 
         onCurrentEquipedWeaponAmmoChange
