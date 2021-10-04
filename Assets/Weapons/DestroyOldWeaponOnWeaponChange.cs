@@ -15,27 +15,13 @@ public class DestroyOldWeaponOnWeaponChange : MonoBehaviour
     void Start()
     {
         var weapons = weaponPivot.Value.GetComponent<Transform>();
-        var waitForTwoChildren = Observable.FromCoroutine(() =>
-        {
-            return new WaitUntil(() => weapons.childCount > 1);
-        }).TakeUntilDisable(this);
-        onWeaponChanged
-        .Event
-        .Observe()
-        .CombineLatest(waitForTwoChildren, (l, r) => l)
+        weapons
+        .ObserveEveryValueChanged((v) => v.childCount).Where((c) => c > 1)
         .TakeUntilDisable(this)
-        .Subscribe((weaponEntity) =>
-           {
-               if (weaponEntity.entity.Id == entity.Value.Id)
-               {
+        .Subscribe((c) =>
+        {
+            Destroy(weapons.GetChild(0)?.gameObject);
+        });
 
-                   if (weapons.childCount > 1)
-                   {
-                       Destroy(weaponPivot.Value.GetComponent<Transform>().GetChild(0)?.gameObject);
-                   }
-
-               }
-           }
-        );
     }
 }
