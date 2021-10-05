@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6de396b7161db3045aca8cf1f2f926aa, type: 3}
+  m_Script: {fileID: 11500000, guid: b8db79be4274a0145b4f5c655df19225, type: 3}
   m_Name: Interpret Jumping
   m_EditorClassIdentifier: 
   _developerDescription: 

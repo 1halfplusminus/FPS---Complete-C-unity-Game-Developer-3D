@@ -24,7 +24,7 @@ MonoBehaviour:
     reloadTime: 1000
     hitEffect: 1
     shootEffect: 2
-    AmmoType: 1
+    AmmoType: 2
   _changed: {fileID: 11400000, guid: 6204e520534de854f90a0292e6b0818f, type: 2}
   _changedWithHistory: {fileID: 0}
   _triggerChangedOnOnEnable: 0
@@ -39,12 +39,12 @@ MonoBehaviour:
     reloadTime: 1000
     hitEffect: 1
     shootEffect: 2
-    AmmoType: 1
+    AmmoType: 2
   _initialValue:
     Id: 5
     name: Carabine
     damage: 8
-    zoom: 30
+    zoom: 20
     range: 100
     throttle: 1000
     reloadTime: 1000
