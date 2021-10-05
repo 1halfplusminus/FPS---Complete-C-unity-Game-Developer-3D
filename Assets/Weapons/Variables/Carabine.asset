@@ -50,5 +50,5 @@ MonoBehaviour:
     reloadTime: 1000
     hitEffect: 1
     shootEffect: 2
-    AmmoType: 1
+    AmmoType: 2
   _preChangeTransformers: []

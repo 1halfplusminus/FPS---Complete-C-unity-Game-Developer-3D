@@ -45,8 +45,8 @@ MonoBehaviour:
     name: Shoot Gun
     damage: 10
     zoom: 0
-    range: 5
-    throttle: 2000
+    range: 7
+    throttle: 1500
     reloadTime: 4000
     hitEffect: 1
     shootEffect: 2
