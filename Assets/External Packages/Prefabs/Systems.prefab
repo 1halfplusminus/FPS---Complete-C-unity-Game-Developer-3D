@@ -351,7 +351,7 @@ MonoBehaviour:
     _variableInstancer: {fileID: 0}
   onExitGame:
     _usage: 0
-    _event: {fileID: 0}
+    _event: {fileID: 11400000, guid: a396e29548804ba4ba00831448a93a20, type: 2}
     _eventInstancer: {fileID: 0}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}

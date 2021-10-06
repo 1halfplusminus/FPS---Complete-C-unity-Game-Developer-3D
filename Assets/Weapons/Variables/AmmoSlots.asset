@@ -18,7 +18,7 @@ MonoBehaviour:
       value: 0
   - ammoType: 1
     amount:
-      value: 0
+      value: 882
   - ammoType: 2
     amount:
-      value: 0
+      value: 991
