@@ -23677,7 +23677,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 5654
+  m_VersionIndex: 5657
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -23695,7 +23695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Shape:
-    rid: 6850998817821294679
+    rid: 6850998840186634359
   m_Size: {x: 6.4408875, y: 10.095992, z: 8.297432}
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_PivotLocation: 1
@@ -23707,7 +23707,7 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 6850998817821294679
+    - rid: 6850998840186634359
       type: {class: Stairs, ns: UnityEngine.ProBuilder.Shapes, asm: Unity.ProBuilder}
       data:
         m_StepGenerationType: 1
@@ -23736,7 +23736,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ff188f58422043f489060e28a5e4e0c0, type: 2}
+  - {fileID: 2100000, guid: 059ece18593d5ef42991c49d64eb4744, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -25502,7 +25502,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 2475
+  m_VersionIndex: 2478
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -28515,7 +28515,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 4200
+  m_VersionIndex: 4203
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -28533,7 +28533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Shape:
-    rid: 6850998817821294680
+    rid: 6850998840186634358
   m_Size: {x: 0.5650949, y: 5.9941406, z: -15.224779}
   m_Rotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
   m_PivotLocation: 1
@@ -28545,7 +28545,7 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 6850998817821294680
+    - rid: 6850998840186634358
       type: {class: Cube, ns: UnityEngine.ProBuilder.Shapes, asm: Unity.ProBuilder}
 --- !u!23 &5320750612884755867
 MeshRenderer:

@@ -18,7 +18,6 @@ public class TrackTargetPosition : MonoBehaviour
         target
         .ObserveEveryValueChanged((t) => t.Value ? t.Value.transform.position : Vector3.zero)
         .TakeUntilDisable(this)
-        .DistinctUntilChanged()
         .Subscribe((p) =>
         {
             Debug.Log(gameObject.name + " Update Target Position To " + p);
