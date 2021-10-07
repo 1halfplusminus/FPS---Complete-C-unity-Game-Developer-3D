@@ -5433,23 +5433,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 447540a5692ab204e800f9c50a552252, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1941794156
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9208276053056033267}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e60dbff66b00d43efbdd6087ddbf15a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _inMemoryCopy: {fileID: 0}
-  _base: {fileID: 11400000, guid: 55f626acb8b11f74ebae2914e9efce74, type: 2}
-  _inspectorRaiseValue:
-    _collider: {fileID: 0}
-    _gameObject: {fileID: 0}
 --- !u!114 &1895422943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5477,7 +5460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _inMemoryCopy: {fileID: 0}
-  _base: {fileID: 0}
+  _base: {fileID: 11400000, guid: 2ba84306ee179df4a8728dd85af1c523, type: 2}
 --- !u!114 &1895422945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5555,6 +5538,23 @@ MonoBehaviour:
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 1895422944}
   database: {fileID: 11400000, guid: 6ded84873f07e7b4392865f7e0d5cf06, type: 2}
+--- !u!114 &1941794156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9208276053056033267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e60dbff66b00d43efbdd6087ddbf15a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _inMemoryCopy: {fileID: 0}
+  _base: {fileID: 11400000, guid: 55f626acb8b11f74ebae2914e9efce74, type: 2}
+  _inspectorRaiseValue:
+    _collider: {fileID: 0}
+    _gameObject: {fileID: 0}
 --- !u!1001 &4364504827951883756
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5739,7 +5739,7 @@ PrefabInstance:
       objectReference: {fileID: 1941794156}
     - target: {fileID: 6038577532289930467, guid: 4790a87eb798d5f45ba9d4dbfd05cc5c, type: 3}
       propertyPath: _conditions.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6038577532289930467, guid: 4790a87eb798d5f45ba9d4dbfd05cc5c, type: 3}
       propertyPath: _unityEventResponse.m_PersistentCalls.m_Calls.Array.size
