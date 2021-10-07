@@ -321,7 +321,7 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
             ""id"": ""34482201-b319-4bbc-8289-6b89536fb3f1"",
             ""actions"": [
                 {
-                    ""name"": ""Hide Cursor"",
+                    ""name"": ""Remove Focus"",
                     ""type"": ""Button"",
                     ""id"": ""b65671fa-0367-4b00-a640-6ded070d6631"",
                     ""expectedControlType"": ""Button"",
@@ -334,11 +334,11 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""f4b494b1-c0e3-468e-8f46-5d760f62b07e"",
-                    ""path"": ""<Keyboard>/escape"",
+                    ""path"": ""<Keyboard>/OEM1"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Hide Cursor"",
+                    ""action"": ""Remove Focus"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -385,7 +385,7 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
         m_Gameplay_ChangeWeapon = m_Gameplay.FindAction("Change Weapon", throwIfNotFound: true);
         // Debug
         m_Debug = asset.FindActionMap("Debug", throwIfNotFound: true);
-        m_Debug_HideCursor = m_Debug.FindAction("Hide Cursor", throwIfNotFound: true);
+        m_Debug_RemoveFocus = m_Debug.FindAction("Remove Focus", throwIfNotFound: true);
         // Game
         m_Game = asset.FindActionMap("Game", throwIfNotFound: true);
         m_Game_ExitGame = m_Game.FindAction("Exit Game", throwIfNotFound: true);
@@ -521,12 +521,12 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
     // Debug
     private readonly InputActionMap m_Debug;
     private IDebugActions m_DebugActionsCallbackInterface;
-    private readonly InputAction m_Debug_HideCursor;
+    private readonly InputAction m_Debug_RemoveFocus;
     public struct DebugActions
     {
         private @GameInput m_Wrapper;
         public DebugActions(@GameInput wrapper) { m_Wrapper = wrapper; }
-        public InputAction @HideCursor => m_Wrapper.m_Debug_HideCursor;
+        public InputAction @RemoveFocus => m_Wrapper.m_Debug_RemoveFocus;
         public InputActionMap Get() { return m_Wrapper.m_Debug; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -536,16 +536,16 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
         {
             if (m_Wrapper.m_DebugActionsCallbackInterface != null)
             {
-                @HideCursor.started -= m_Wrapper.m_DebugActionsCallbackInterface.OnHideCursor;
-                @HideCursor.performed -= m_Wrapper.m_DebugActionsCallbackInterface.OnHideCursor;
-                @HideCursor.canceled -= m_Wrapper.m_DebugActionsCallbackInterface.OnHideCursor;
+                @RemoveFocus.started -= m_Wrapper.m_DebugActionsCallbackInterface.OnRemoveFocus;
+                @RemoveFocus.performed -= m_Wrapper.m_DebugActionsCallbackInterface.OnRemoveFocus;
+                @RemoveFocus.canceled -= m_Wrapper.m_DebugActionsCallbackInterface.OnRemoveFocus;
             }
             m_Wrapper.m_DebugActionsCallbackInterface = instance;
             if (instance != null)
             {
-                @HideCursor.started += instance.OnHideCursor;
-                @HideCursor.performed += instance.OnHideCursor;
-                @HideCursor.canceled += instance.OnHideCursor;
+                @RemoveFocus.started += instance.OnRemoveFocus;
+                @RemoveFocus.performed += instance.OnRemoveFocus;
+                @RemoveFocus.canceled += instance.OnRemoveFocus;
             }
         }
     }
@@ -594,7 +594,7 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
     }
     public interface IDebugActions
     {
-        void OnHideCursor(InputAction.CallbackContext context);
+        void OnRemoveFocus(InputAction.CallbackContext context);
     }
     public interface IGameActions
     {

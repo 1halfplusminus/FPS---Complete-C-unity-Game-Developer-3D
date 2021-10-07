@@ -14,6 +14,7 @@ public class CursorManager : ScriptableObject
     void OnAwake()
     {
         visible.Changed.Register(Visible);
+        Init();
     }
     void OnEnable()
     {
@@ -40,6 +41,7 @@ public class CursorManager : ScriptableObject
     void HideCursorInGame(bool inGame)
     {
         Debug.Log("Hide Cursor in Game");
+
         if (inGame)
         {
             HideCursor();

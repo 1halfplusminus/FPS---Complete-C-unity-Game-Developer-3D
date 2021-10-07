@@ -102,7 +102,7 @@ MonoBehaviour:
     _usage: 0
     _value:
       _ammoType: 1
-      _amount: 8
+      _amount: 16
     _constant: {fileID: 0}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
@@ -113,6 +113,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2564549434368269556}
     m_Modifications:
+    - target: {fileID: 1676361598152994768, guid: 22eddb1f8addbe5478be97905221790f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2553324572089407619, guid: 22eddb1f8addbe5478be97905221790f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2866343402603864296, guid: 22eddb1f8addbe5478be97905221790f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189304288402661076, guid: 22eddb1f8addbe5478be97905221790f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6749459236337469884, guid: 22eddb1f8addbe5478be97905221790f, type: 3}
       propertyPath: m_RootOrder
       value: 0

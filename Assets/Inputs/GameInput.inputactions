@@ -299,7 +299,7 @@
             "id": "34482201-b319-4bbc-8289-6b89536fb3f1",
             "actions": [
                 {
-                    "name": "Hide Cursor",
+                    "name": "Remove Focus",
                     "type": "Button",
                     "id": "b65671fa-0367-4b00-a640-6ded070d6631",
                     "expectedControlType": "Button",
@@ -312,11 +312,11 @@
                 {
                     "name": "",
                     "id": "f4b494b1-c0e3-468e-8f46-5d760f62b07e",
-                    "path": "<Keyboard>/escape",
+                    "path": "<Keyboard>/OEM1",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Hide Cursor",
+                    "action": "Remove Focus",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
