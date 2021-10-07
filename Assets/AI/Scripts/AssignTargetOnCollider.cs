@@ -7,9 +7,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityAtoms.Tags;
-public class FollowColliderPosition : MonoBehaviour
+public class AssignTargetOnCollider : MonoBehaviour
 {
-    [SerializeField] Vector3EventReference onPositionChanged;
+    [SerializeField] GameObjectReference target;
 
     [SerializeField] ColliderEventInstancer onCollider;
 
@@ -26,19 +26,8 @@ public class FollowColliderPosition : MonoBehaviour
         {
             if (!collider.gameObject.HasAnyTag(tagsList)) { return; }
             if (currentTracked != null) { currentTracked.Dispose(); }
-            currentTracked = collider
-            .gameObject
-            .transform
-            .ObserveEveryValueChanged((t) => t.position)
-            .DistinctUntilChanged()
-            .TakeUntilDisable(this)
-            .Subscribe((p) =>
-            {
-                Debug.Log("New Target acquire "
-                 + collider.name
-                 + " tracking target position: " + p);
-                onPositionChanged.Event.Raise(p);
-            });
+            Debug.Log(gameObject.name + " New target aquired on collider " + collider.gameObject.name);
+            target.Value = collider.gameObject;
         });
     }
 }
